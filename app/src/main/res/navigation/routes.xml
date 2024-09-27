@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/photoCreationScreenFragment">
+
+    <fragment
+        android:id="@+id/photoCreationScreenFragment"
+        android:name="com.example.courseproject.PhotoCreationScreenFragment"
+        android:label="photo_creation_screen_fragment"
+        tools:layout="@layout/photo_creation_screen_fragment">
+        <action
+            android:id="@+id/action_photoCreationScreenFragment_to_videoCreationScreenFragment"
+            app:destination="@id/videoCreationScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoCreationScreenFragment"
+        android:name="com.example.courseproject.VideoCreationScreenFragment"
+        android:label="video_creation_screen_fragment"
+        tools:layout="@layout/video_creation_screen_fragment">
+        <action
+            android:id="@+id/action_videoCreationScreenFragment_to_galleryScreenFragment"
+            app:destination="@id/galleryScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryScreenFragment"
+        android:name="com.example.courseproject.GalleryScreenFragment"
+        android:label="gallery_screen_fragment"
+        tools:layout="@layout/gallery_screen_fragment" />
+</navigation>
